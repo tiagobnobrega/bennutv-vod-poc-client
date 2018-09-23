@@ -1,0 +1,25 @@
+.menu {
+  grid-area: sidebar;
+  height: 100vh;
+  background-color: #444444; }
+  .menu .links {
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 2px solid #444444; }
+    .menu .links::-webkit-scrollbar {
+      width: 5px; }
+    .menu .links::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.5); }
+    .menu .links div {
+      display: block;
+      width: 100%;
+      padding: 12px 8px;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: #fff; }
+      .menu .links div:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        cursor: pointer; }
+      .menu .links div.selected {
+        background-color: rgba(0, 0, 0, 0.5); }

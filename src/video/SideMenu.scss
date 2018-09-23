@@ -1,0 +1,40 @@
+$menu-bg:#444444;
+$color: #fff;
+$selected-color:$color;
+$hover-bg: rgba(255,255,255,.3);
+$selected-bg: rgba(0,0,0,.5);
+.menu{
+  grid-area: sidebar;
+  height:100vh;
+  background-color: $menu-bg;
+  .links{
+    height: 100vh;
+    overflow-y:auto;
+    box-sizing: border-box;
+    border: 2px solid $menu-bg;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: rgba(255,255,255,.5);
+    }
+    div{
+      display: block;
+      width: 100%;
+      padding: 12px 8px;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: $color;
+      &:hover{
+        background-color: $hover-bg;
+        cursor: pointer;
+      }
+      &.selected{
+        background-color: $selected-bg;
+      }
+    }
+  }
+
+}
+
+

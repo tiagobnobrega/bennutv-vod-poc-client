@@ -1,0 +1,5 @@
+.video-view {
+  display: grid;
+  grid-template-rows: 75px auto;
+  grid-template-columns: 350px auto;
+  grid-template-areas: 'sidebar content content'; }
